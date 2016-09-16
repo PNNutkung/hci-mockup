@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">SKEAssistant</string>
+    <string name="main_activity_grid_image_view">Grid View Icon</string>
 </resources>
