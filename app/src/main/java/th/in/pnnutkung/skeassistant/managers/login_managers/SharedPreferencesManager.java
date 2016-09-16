@@ -1,4 +1,4 @@
-package th.in.pnnutkung.skeassistant.manager;
+package th.in.pnnutkung.skeassistant.managers.login_managers;
 
 /**
  * Created by nut on 16/9/2559.
