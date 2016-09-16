@@ -5,6 +5,7 @@ import android.support.v7.widget.RecyclerView;
 
 /**
  * Created by nut on 16/9/2559.
+ * This class is the item holder in grid view on main activity.
  */
 public class MainActivityItemHolder extends RecyclerView.ViewHolder {
 
