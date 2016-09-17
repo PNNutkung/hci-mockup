@@ -2,4 +2,5 @@
     <string name="app_name">SKEAssistant</string>
     <string name="main_activity_grid_image_view">Grid View Icon</string>
     <string name="title_activity_announcement">Announcement</string>
+    <string name="title_activity_social">Social</string>
 </resources>

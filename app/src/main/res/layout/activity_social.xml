@@ -2,41 +2,35 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="th.in.pnnutkung.skeassistant.activities.AnnouncementActivity">
+    tools:context="th.in.pnnutkung.skeassistant.activities.SocialActivity">
     <android.support.design.widget.CoordinatorLayout
-        android:id="@+id/announcement_root_layout"
+        android:id="@+id/social_root_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fitsSystemWindows="true">
 
         <android.support.design.widget.AppBarLayout
-            android:id="@+id/announcement_appbar_layout"
+            android:id="@+id/social_appbar_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
             <android.support.v7.widget.Toolbar
-                android:id="@+id/announcement_toolbar_layout"
+                android:id="@+id/social_toolbar_layout"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 android:background="?attr/colorPrimary"
-                app:layout_scrollFlags="scroll|enterAlways|snap"
                 app:popupTheme="@style/AppTheme.PopupOverlay" />
-
-            <android.support.design.widget.TabLayout
-                android:id="@+id/announcement_tab_layout"
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                app:tabGravity="fill"
-                app:tabMode="fixed"
-                app:layout_scrollFlags="scroll|enterAlwaysCollapsed|snap"/>
         </android.support.design.widget.AppBarLayout>
 
-        <android.support.v4.view.ViewPager
-            android:id="@+id/announcement_view_pager"
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/social_recycler_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+            android:scrollbars="vertical"
+            android:padding="@dimen/social_recycler_view_padding"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            />
 
     </android.support.design.widget.CoordinatorLayout>
 </layout>

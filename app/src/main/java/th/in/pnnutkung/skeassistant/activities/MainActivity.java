@@ -64,6 +64,7 @@ public class MainActivity extends AppCompatActivity implements MainActivityCallb
                 startActivity(new Intent(this, AnnouncementActivity.class));
                 break;
             case Constants.SOCIAL_BTN:
+                startActivity(new Intent(this, SocialActivity.class));
                 break;
             case Constants.DOCUMENT_BTN:
                 break;
