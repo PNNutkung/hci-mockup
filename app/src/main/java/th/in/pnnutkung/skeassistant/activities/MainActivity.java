@@ -1,5 +1,6 @@
 package th.in.pnnutkung.skeassistant.activities;
 
+import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -47,6 +48,7 @@ public class MainActivity extends AppCompatActivity implements MainActivityCallb
     public void startActivityByItem(int position) {
         switch (position) {
             case Constants.ANNOUNCEMENT_BTN:
+                startActivity(new Intent(this, AnnouncementActivity.class));
                 break;
             case Constants.SOCIAL_BTN:
                 break;
