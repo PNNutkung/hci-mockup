@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="socialModel"
+            type="th.in.pnnutkung.skeassistant.models.social.SocialItemModel"/>
+    </data>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/social_item_holder">
+        <TextView
+            android:id="@+id/social_channel"
+            android:layout_weight="1"
+            android:text="@{socialModel.channelName}"
+            android:textSize="@dimen/font_size_m"
+            android:textColor="@color/black"
+            android:fontFamily="roboto"
+            android:textStyle="bold"
+            android:layout_marginStart="@dimen/social_item_holder_margin"
+            android:layout_marginLeft="@dimen/social_item_holder_margin"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_arrow_right"
+            android:drawableEnd="@drawable/ic_arrow_right"/>
+    </LinearLayout>
+</layout>

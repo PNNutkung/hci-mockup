@@ -19,4 +19,6 @@
     <dimen name="announcement_title">16dp</dimen>
     <dimen name="announcement_desc">16dp</dimen>
     <dimen name="social_recycler_view_padding">16dp</dimen>
+    <dimen name="social_item_holder">90dp</dimen>
+    <dimen name="social_item_holder_margin">16dp</dimen>
 </resources>

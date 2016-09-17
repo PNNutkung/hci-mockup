@@ -2,6 +2,7 @@ package th.in.pnnutkung.skeassistant.activities;
 
 import android.content.Intent;
 import android.databinding.DataBindingUtil;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -67,8 +68,14 @@ public class MainActivity extends AppCompatActivity implements MainActivityCallb
                 startActivity(new Intent(this, SocialActivity.class));
                 break;
             case Constants.DOCUMENT_BTN:
+                Uri googleDoc = Uri.parse("https://docs.google.com/");
+                Intent intent = new Intent(Intent.ACTION_VIEW, googleDoc);
+                startActivity(intent);
                 break;
             case Constants.VIDEOS_BTN:
+                Uri knowbita = Uri.parse("https://knowbita.cpe.ku.ac.th/");
+                Intent intentK = new Intent(Intent.ACTION_VIEW, knowbita);
+                startActivity(intentK);
                 break;
         }
     }
