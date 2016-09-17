@@ -12,7 +12,7 @@
         android:layout_height="@dimen/annoucement_item_holder_root_layout">
         <TextView
             android:id="@+id/announcement_title"
-            android:textSize="@dimen/font_size_m"
+            android:textSize="@dimen/font_sub_heading"
             android:layout_marginStart="@dimen/announcement_title"
             android:layout_marginLeft="@dimen/announcement_title"
             android:layout_marginTop="@dimen/announcement_title"
@@ -34,7 +34,7 @@
             android:fontFamily="roboto"
             android:singleLine="true"
             android:textStyle="normal"
-            android:textSize="@dimen/font_size_sm"
+            android:textSize="@dimen/font_body_1"
             android:textColor="@color/black"
             android:layout_alignParentBottom="true"/>
     </RelativeLayout>
