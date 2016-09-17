@@ -37,7 +37,10 @@ public class MainActivity extends AppCompatActivity implements MainActivityCallb
 
     private void initGridViewItem() {
         gridModelList = new ArrayList<>();
-        gridModelList.add(new MainActivityGridModel(ContextCompat.getDrawable(this, R.drawable.ic_announcement),"Annoucement"));
+        gridModelList.add(new MainActivityGridModel(ContextCompat.getDrawable(this, R.drawable.ic_announcement),"Announcement"));
+        gridModelList.add(new MainActivityGridModel(ContextCompat.getDrawable(this, R.drawable.ic_social),"Social"));
+        gridModelList.add(new MainActivityGridModel(ContextCompat.getDrawable(this, R.drawable.ic_assignment),"Assignment"));
+        gridModelList.add(new MainActivityGridModel(ContextCompat.getDrawable(this, R.drawable.ic_video),"Videos"));
     }
 
     @Override

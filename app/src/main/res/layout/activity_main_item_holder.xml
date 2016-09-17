@@ -6,7 +6,7 @@
             type="th.in.pnnutkung.skeassistant.models.main_activity.MainActivityGridModel"/>
     </data>
     <RelativeLayout
-        android:layout_width="@dimen/main_activity_item_holder_width"
+        android:layout_width="match_parent"
         android:layout_height="@dimen/main_activity_item_holder_height"
         android:padding="@dimen/main_activity_padding"
         android:background="?attr/selectableItemBackground">
@@ -15,7 +15,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:background="?attr/selectableItemBackground"
             android:orientation="vertical">
             <ImageView
                 android:id="@+id/main_activity_grid_image_view"
@@ -31,6 +30,7 @@
                 android:text="@{mainActivityModel.description}"
                 android:textColor="@color/black"
                 android:textSize="@dimen/font_body_1"
+                android:layout_gravity="center_horizontal"
                 android:fontFamily="roboto"
                 android:textStyle="normal"
                 />
