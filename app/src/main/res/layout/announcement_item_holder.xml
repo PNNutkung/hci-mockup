@@ -17,6 +17,7 @@
             android:layout_marginLeft="@dimen/announcement_title"
             android:layout_marginTop="@dimen/announcement_title"
             android:text="@{announceItem.announceTitle}"
+            android:singleLine="true"
             android:fontFamily="roboto"
             android:textStyle="bold"
             android:textColor="@color/black"
@@ -31,16 +32,10 @@
             android:layout_marginBottom="@dimen/announcement_desc"
             android:text="@{announceItem.announceDesc}"
             android:fontFamily="roboto"
+            android:singleLine="true"
             android:textStyle="normal"
             android:textSize="@dimen/font_size_sm"
             android:textColor="@color/black"
             android:layout_alignParentBottom="true"/>
-        <ImageView
-            android:layout_centerVertical="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_arrow_right"/>
     </RelativeLayout>
 </layout>
