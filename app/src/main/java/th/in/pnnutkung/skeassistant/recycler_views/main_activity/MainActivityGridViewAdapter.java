@@ -1,4 +1,4 @@
-package th.in.pnnutkung.skeassistant.recyclerViews.main_activity;
+package th.in.pnnutkung.skeassistant.recycler_views.main_activity;
 
 import android.databinding.DataBindingUtil;
 import android.databinding.ViewDataBinding;

@@ -9,4 +9,6 @@ public class Constants {
     public static final int SOCIAL_BTN = 1;
     public static final int DOCUMENT_BTN = 2;
     public static final int VIDEOS_BTN = 3;
+    public static final String IMPORTANT = "Important";
+    public static final String HOMEWORK = "Homework";
 }

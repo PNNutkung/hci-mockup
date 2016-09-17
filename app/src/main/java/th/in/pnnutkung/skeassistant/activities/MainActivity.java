@@ -2,10 +2,13 @@ package th.in.pnnutkung.skeassistant.activities;
 
 import android.content.Intent;
 import android.databinding.DataBindingUtil;
+import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
+
+import com.yqritc.recyclerviewflexibledivider.HorizontalDividerItemDecoration;
+import com.yqritc.recyclerviewflexibledivider.VerticalDividerItemDecoration;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,7 +18,7 @@ import th.in.pnnutkung.skeassistant.callbacks.MainActivityCallback;
 import th.in.pnnutkung.skeassistant.databinding.ActivityMainBinding;
 import th.in.pnnutkung.skeassistant.managers.misc.Constants;
 import th.in.pnnutkung.skeassistant.models.main_activity.MainActivityGridModel;
-import th.in.pnnutkung.skeassistant.recyclerViews.main_activity.MainActivityGridViewAdapter;
+import th.in.pnnutkung.skeassistant.recycler_views.main_activity.MainActivityGridViewAdapter;
 
 public class MainActivity extends AppCompatActivity implements MainActivityCallback {
 
@@ -32,6 +35,8 @@ public class MainActivity extends AppCompatActivity implements MainActivityCallb
 
     private void initRecyclerViewAdapter() {
         MainActivityGridViewAdapter gridViewAdapter = new MainActivityGridViewAdapter(gridModelList, this);
+        binding.mainActivityRecyclerView.addItemDecoration(new HorizontalDividerItemDecoration.Builder(this).build());
+        binding.mainActivityRecyclerView.addItemDecoration(new VerticalDividerItemDecoration.Builder(this).build());
         binding.mainActivityRecyclerView.setLayoutManager(new GridLayoutManager(this, 2));
         binding.mainActivityRecyclerView.setAdapter(gridViewAdapter);
     }
