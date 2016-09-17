@@ -41,9 +41,9 @@ public class HomeworkFragment extends Fragment {
 
     private void initRecyclerView() {
         AnnouncementLinearViewAdapter linearViewAdapter = new AnnouncementLinearViewAdapter(announcementItemModelList);
-        binding.annoucementRecyclerView.addItemDecoration(new HorizontalDividerItemDecoration.Builder(this.getActivity()).build());
-        binding.annoucementRecyclerView.setLayoutManager(new LinearLayoutManager(this.getActivity()));
-        binding.annoucementRecyclerView.setAdapter(linearViewAdapter);
+        binding.announcementRecyclerView.addItemDecoration(new HorizontalDividerItemDecoration.Builder(this.getActivity()).build());
+        binding.announcementRecyclerView.setLayoutManager(new LinearLayoutManager(this.getActivity()));
+        binding.announcementRecyclerView.setAdapter(linearViewAdapter);
     }
 
     private void initDataList() {
