@@ -29,8 +29,16 @@ public class MainActivity extends AppCompatActivity implements MainActivityCallb
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
+        initTitle();
         initGridViewItem();
         initRecyclerViewAdapter();
+    }
+
+    private void initTitle() {
+        setSupportActionBar(binding.mainActivityToolbarLayout);
+        if(getSupportActionBar() != null) {
+            getSupportActionBar().setTitle(Constants.MAIN_TITLE);
+        }
     }
 
     private void initRecyclerViewAdapter() {
